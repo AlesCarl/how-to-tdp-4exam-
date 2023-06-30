@@ -1,5 +1,9 @@
 # 📝 How To TdP
 
+
+GRAFO COMPLETO: un grafo che 
+****** Un grafo è completo se quando lo crei, con 2 for inserisci sempre l’arco ****** 
+
 ## ✍️ Table of Contents
 
 1. [Roba da portare / Todo prima dell'esame](#-roba-da-portare--todo-prima-dellesame)
