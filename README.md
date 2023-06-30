@@ -1,8 +1,30 @@
 # 📝 How To TdP
 
 
-GRAFO COMPLETO:  
-****** Un grafo è completo se quando lo crei, con 2 for inserisci sempre l’arco ****** 
+********* GRAFO COMPLETO ********* 
+per verificare che lo sia: 
+
+
+1. Ottieni l'insieme dei vertici del grafo.
+2. Itera su ogni coppia di vertici distinti.
+3. Per ogni coppia di vertici, verifica se esiste un arco diretto tra di essi.
+4. Puoi utilizzare il metodo containsEdge(V sourceVertex, V targetVertex) per controllare se esiste un arco diretto tra due vertici nel grafo.
+5. Se per ogni coppia di vertici esiste un arco diretto, allora il grafo è completo. Altrimenti, non è completo.
+
+ESEMPIO: 
+for (Vertice vertex1 : graph.vertexSet()) {
+            for (Vertice vertex2 : graph.vertexSet()) {
+            
+                if (!vertex1.equals(vertex2) && !graph.containsEdge(vertex1, vertex2)) {
+                    return false;  // non è completo
+                }
+            }
+        }
+        return true;
+    }
+
+
+
 
 ## ✍️ Table of Contents
 
