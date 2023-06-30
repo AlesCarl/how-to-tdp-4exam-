@@ -12,16 +12,16 @@ per verificare che lo sia:
 5. Se per ogni coppia di vertici esiste un arco diretto, allora il grafo è completo. Altrimenti, non è completo.
 
 ESEMPIO: 
+
 for (Vertice vertex1 : graph.vertexSet()) {
             for (Vertice vertex2 : graph.vertexSet()) {
-            
                 if (!vertex1.equals(vertex2) && !graph.containsEdge(vertex1, vertex2)) {
                     return false;  // non è completo
                 }
             }
         }
         return true;
-    }
+    
 
 
 
