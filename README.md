@@ -16,7 +16,7 @@ ESEMPIO:
 public boolean isCompleteGraph(Graph<V, E> graph) {
 
 for (Vertice vertex1 : graph.vertexSet()) {
-            for (Vertice vertex2 : graph.vertexSet()) {
+    for (Vertice vertex2 : graph.vertexSet()) {
                 if (!vertex1.equals(vertex2) && !graph.containsEdge(vertex1, vertex2)) {
                      return false;  // non è completo
                 }
