@@ -6,12 +6,14 @@ per verificare che lo sia:
 
 
 1. Ottieni l'insieme dei vertici del grafo.
-2. Itera su ogni coppia di vertici distinti.
+2. Itera su ogni coppia di vertici distinti. ( vertexSet ) 
 3. Per ogni coppia di vertici, verifica se esiste un arco diretto tra di essi.
 4. Puoi utilizzare il metodo containsEdge(V sourceVertex, V targetVertex) per controllare se esiste un arco diretto tra due vertici nel grafo.
 5. Se per ogni coppia di vertici esiste un arco diretto, allora il grafo è completo. Altrimenti, non è completo.
 
 ESEMPIO: 
+
+public boolean isCompleteGraph(Graph<V, E> graph) {
 
 for (Vertice vertex1 : graph.vertexSet()) {
             for (Vertice vertex2 : graph.vertexSet()) {
@@ -21,7 +23,7 @@ for (Vertice vertex1 : graph.vertexSet()) {
             }
         }
         return true;
-    
+    }
 
 
 
